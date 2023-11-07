@@ -6,7 +6,62 @@
     bottom: 0;
     z-index: -1;
   }
+
+  &__container {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    margin-top: 150px;
+
+    &__type-animation {
+      font-size: 70px;
+      font-weight: bold;
+    }
+  }
+
+  &__button {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
+.lf-about {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  padding-top: 90px;
+
+  > h1 {
+    color: black;
+  }
+}
+
+.lf-services {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  padding-top: 90px;
+
+  > h1 {
+    color: black;
+  }
+}
+
+.lf-prices {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  padding-top: 90px;
+
+  > h1 {
+    color: black;
+  }
+}
+
 
 @media (min-aspect-ratio: 16/9) {
   .lf-homepage__background-vid {
