@@ -3,7 +3,8 @@ import BackgroundVid from './assets/background2.mp4';
 import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import {TypeAnimation} from "react-type-animation";
+import { TypeAnimation } from "react-type-animation";
+import LeafLogo from './assets/leaf_logo_negative.png'
 
 function App() {
     return (
@@ -26,6 +27,10 @@ function App() {
             <a href="#about" className="lf-homepage__button"><FontAwesomeIcon icon={faChevronDown} beat style={{color: "#ffffff", height: 50, width: 50}} /></a>
             <div className="lf-about" id="about">
                 <h1>Quem Somos?</h1>
+                <div className="lf-about__container">
+                    <img src={ LeafLogo } alt="Leaf Logo"></img>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus iste odit temporibus suscipit mollitia saepe incidunt totam sequi quam facilis? Voluptate reprehenderit alias quisquam necessitatibus iusto fuga officiis, odit odio?</p>
+                </div>
             </div>
             <div className="lf-bg-container">
                 <div className="lf-services" id="services">
@@ -74,7 +79,7 @@ function App() {
                     <div className="lf-services__cards">
                        <h1>Inglês para Fins Académicos</h1>
                        <div className="lf-services__cards-unit">
-                            <h2 className="lf-services__cards-unit--title">Competências acadêmicas para estudantes que estão a iniciar o Ensino Superior</h2>
+                            <h2 className="lf-services__cards-unit--title">Competências acadêmicas para estudantes a iniciar o Ensino Superior</h2>
                             <ul className="lf-services__cards-unit--topics">
                                 <li>Vocabulário e Terminologia Académico</li>
                                 <li>Leitura e compreensão de textos académicos</li>

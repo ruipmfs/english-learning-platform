@@ -31,12 +31,30 @@
 
 .lf-about {
   display: flex;
-  height: 700px;
-  width: 100%;
+  flex-direction: column;
+  height: 100%;
   padding-top: 90px;
+  padding-bottom: 30px;
+  margin: 32px;
+  gap: 50px;
 
   > h1 {
     color: black;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    > p {
+      color: black;
+      width: 100%;
+    }
   }
 }
 
@@ -90,10 +108,12 @@
       &--topics {
         color: black;
         padding-left: 20px;
+        font-weight: 500;
       }
 
       &--description {
         color: black;
+        font-size: small;
       }
 
       &--price {
@@ -121,6 +141,7 @@
           text-decoration: none;
           padding: 14px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          font-weight: bold;
         }
       }
     }
