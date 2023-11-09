@@ -40,18 +40,94 @@
   }
 }
 
+.lf-bg-container {
+  background-color: #e3e3e3;
+}
+
 .lf-services {
   display: flex;
-  height: 700px;
-  width: 100%;
+  flex-direction: column;
+  height: auto;
   padding-top: 90px;
+  padding-bottom: 30px;
+  margin: 32px;
+  gap: 50px;
 
   > h1 {
     color: black;
   }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 32px;
+
+    > h1 {
+      color: black;
+      grid-column: span 2;
+      font-family: 'Kaushan Script' !important;
+    }
+
+    &-unit {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.2fr;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+      &--title {
+        font-family: 'Kaushan Script' !important;
+        color: black;
+        grid-column: span 2;
+        border-bottom: 2px solid #e3e3e3;
+        margin: 0;
+      }
+
+      &--topics {
+        color: black;
+        padding-left: 20px;
+      }
+
+      &--description {
+        color: black;
+      }
+
+      &--price {
+        display: flex;
+        flex-direction: column;
+        color: gray;
+        align-items: center;
+
+        > h3 {
+          margin: 0;
+        }
+      }
+
+      &--button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 20px;
+
+        > a {
+          border-radius: 4px;
+          color: white;
+          background: #3eb14a;
+          text-decoration: none;
+          padding: 14px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+      }
+    }
+  }
 }
 
-.lf-prices {
+.lf-contact {
   display: flex;
   height: 700px;
   width: 100%;

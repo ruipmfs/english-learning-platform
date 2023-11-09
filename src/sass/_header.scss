@@ -4,8 +4,10 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  height: 100px;
+  height: 80px;
   width: 100%;
+  transition: all 0.5s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   &__image {
     > img {
@@ -25,6 +27,23 @@
       font-size: x-large;
       text-decoration: none;
       color: white !important;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.lf-header-scrolled {
+  background: white;
+  transition: all 0.5s;
+
+  > nav {
+    > a {
+      font-size: x-large;
+      text-decoration: none;
+      color: black !important;
 
       &:hover {
         text-decoration: underline;
