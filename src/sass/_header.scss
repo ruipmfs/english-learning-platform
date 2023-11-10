@@ -1,6 +1,6 @@
 .lf-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -66,6 +66,9 @@
 }
 
 @media (max-width: 900px) {
+  .lf-header {
+    flex-direction: column;
+  }
   .lf-header__nav {
     flex-direction: column;
     width: 100%;

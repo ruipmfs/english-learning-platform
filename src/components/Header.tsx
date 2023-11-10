@@ -48,7 +48,7 @@ const Header = () => {
     }
     else {
         return (
-            <div className={isScrolled ? 'lf-header lf-header-scrolled' : 'lf-header'}>
+            <div className={isScrolled ? 'lf-header lf-header-white' : 'lf-header'}>
                 <a className="lf-header__image" href="#"><img src={isScrolled ? LeafLogoNegative : LeafLogo} alt="Logo"></img></a>
                 <nav className="lf-header__nav">
                     <a href="#about">Quem Somos?</a>
