@@ -29,7 +29,7 @@ function App() {
                 <h1>Quem Somos?</h1>
                 <div className="lf-about__container">
                     <img src={ LeafLogo } alt="Leaf Logo"></img>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus iste odit temporibus suscipit mollitia saepe incidunt totam sequi quam facilis? Voluptate reprehenderit alias quisquam necessitatibus iusto fuga officiis, odit odio?</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus iste odit temporibus suscipit mollitia saepe incidunt totam sequi quam facilis? Voluptate reprehenderit alias quisquam necessitatibus iusto fuga officiis, odit odio?</span>
                 </div>
             </div>
             <div className="lf-bg-container">
@@ -48,13 +48,13 @@ function App() {
                                 <li>Aspetos culturais e sociais</li>
                                 <li>Comunicação digital</li>
                             </ul>
-                            <p className="lf-services__cards-unit--description">O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos do curso. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança em cenários da vida real e a melhorar as suas competências de conversação e comunicação.</p>
+                            <span className="lf-services__cards-unit--description">O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos do curso. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança em cenários da vida real e a melhorar as suas competências de conversação e comunicação.</span>
                             <div className="lf-services__cards-unit--price">
                                 <h3>Preço</h3>
                                 <h3>--.--€</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
-                                <a className="lf-services__cards-unit--button" href="#contact">Contact us</a>
+                                <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
                             </div>
                        </div>
                        <div className="lf-services__cards-unit">
@@ -66,13 +66,13 @@ function App() {
                                 <li>Networking e socialização</li>
                                 <li>Comunicação digital</li>
                             </ul>
-                            <p className="lf-services__cards-unit--description">Este curso pode ser personalizado com base nas necessidades específicas dos participantes e dos setores em que trabalham. O objetivo é equipar os participantes com as competências linguísticas e de comunicação necessárias para se destacarem nas suas carreiras profissionais e se envolverem efetivamente na comunidade empresarial global.</p>
+                            <span className="lf-services__cards-unit--description">Este curso pode ser personalizado com base nas necessidades específicas dos participantes e dos setores em que trabalham. O objetivo é equipar os participantes com as competências linguísticas e de comunicação necessárias para se destacarem nas suas carreiras profissionais e se envolverem efetivamente na comunidade empresarial global.</span>
                             <div className="lf-services__cards-unit--price">
                                 <h3>Preço</h3>
                                 <h3>--.--€</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
-                                <a className="lf-services__cards-unit--button" href="#contact">Contact us</a>
+                                <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
                             </div>
                        </div>
                     </div>
@@ -89,13 +89,13 @@ function App() {
                                 <li>Técnicas de apresentação oral</li>
                                 <li>Gerência de tempo e de estudo</li>
                             </ul>
-                            <p className="lf-services__cards-unit--description">O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) dos participantes. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança no âmbito académico. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas.</p>
+                            <span className="lf-services__cards-unit--description">O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) dos participantes. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança no âmbito académico. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas.</span>
                             <div className="lf-services__cards-unit--price">
                                 <h3>Preço</h3>
                                 <h3>--.--€</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
-                                <a className="lf-services__cards-unit--button" href="#contact">Contact us</a>
+                                <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
                             </div>
                        </div>
                        <div className="lf-services__cards-unit">
@@ -107,13 +107,13 @@ function App() {
                                 <li>Redação de propostas de pesquisa e pedidos de subsídios</li>
                                 <li>Preparar e fazer apresentações académicas eficazes</li>
                             </ul>
-                            <p className="lf-services__cards-unit--description">O conteúdo e a estrutura deste curso podem variar dependendo da instituição e das disciplinas académicas específicas dos alunos. O objetivo é ajudar os alunos a se tornarem comunicadores e académicos eficazes e confiantes nas suas áreas de estudo escolhidas. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas.</p>
+                            <span className="lf-services__cards-unit--description">O conteúdo e a estrutura deste curso podem variar dependendo da instituição e das disciplinas académicas específicas dos alunos. O objetivo é ajudar os alunos a se tornarem comunicadores e académicos eficazes e confiantes nas suas áreas de estudo escolhidas. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas.</span>
                             <div className="lf-services__cards-unit--price">
                                 <h3>Preço</h3>
                                 <h3>--.--€</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
-                                <a className="lf-services__cards-unit--button" href="#contact">Contact us</a>
+                                <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
                             </div>
                        </div>
                     </div>
@@ -134,14 +134,14 @@ function App() {
                                 <h3>--.--€</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
-                                <a className="lf-services__cards-unit--button" href="#contact">Contact us</a>
+                                <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
                             </div>
                        </div>
                     </div>
                     <div className="lf-services__cards">
                        <h1>Técnicas de falar em público</h1>
                        <div className="lf-services__cards-unit">
-                            <h2 className="lf-services__cards-unit--title">Preparação para exames Cambridge</h2>
+                            <h2 className="lf-services__cards-unit--title">Falar em público</h2>
                             <ul className="lf-services__cards-unit--topics">
                                 <li>Superar o medo e a ansiedade ao falar em público</li>
                                 <li>Preparação e organização do discurso</li>
@@ -158,7 +158,7 @@ function App() {
                                 <h3>--.--€</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
-                                <a className="lf-services__cards-unit--button" href="#contact">Contact us</a>
+                                <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
                             </div>
                        </div>
                     </div>

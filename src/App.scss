@@ -51,7 +51,7 @@
       object-fit: contain;
     }
 
-    > p {
+    > span {
       color: black;
       width: 100%;
     }
@@ -69,7 +69,7 @@
   padding-top: 90px;
   padding-bottom: 30px;
   margin: 32px;
-  gap: 50px;
+  gap: 30px;
 
   > h1 {
     color: black;
@@ -151,7 +151,7 @@
 .lf-contact {
   display: flex;
   height: 700px;
-  width: 100%;
+  padding: 0 32px;
   padding-top: 90px;
 
   > h1 {
@@ -171,5 +171,98 @@
   .lf-homepage__background-vid {
     width: auto;
     height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .lf-about {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  
+      > img {
+        width: 100%;
+        object-fit: contain;
+      }
+  
+      > span {
+        color: black;
+        width: 100%;
+      }
+    }
+  }
+
+  .lf-services {
+    &__cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1fr 1fr;
+      gap: 32px;
+  
+      > h1 {
+        grid-column: span 1;
+      }
+  
+      &-unit {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  
+        &--title {
+          font-family: 'Kaushan Script' !important;
+          color: black;
+          grid-column: span 2;
+          border-bottom: 2px solid #e3e3e3;
+          margin: 0;
+        }
+  
+        &--topics {
+          color: black;
+          padding-left: 20px;
+          grid-column: span 2;
+          font-weight: 500;
+        }
+  
+        &--description {
+          color: black;
+          font-size: small;
+          grid-column: span 2;
+        }
+  
+        &--price {
+          display: flex;
+          flex-direction: column;
+          color: gray;
+          align-items: center;
+  
+          > h3 {
+            margin: 0;
+          }
+        }
+  
+        &--button {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          margin-right: 20px;
+  
+          > a {
+            border-radius: 4px;
+            color: white;
+            background: #3eb14a;
+            text-decoration: none;
+            padding: 14px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
 }
