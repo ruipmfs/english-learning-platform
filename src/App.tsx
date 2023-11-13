@@ -1,10 +1,11 @@
 import './App.scss';
 import BackgroundVid from './assets/background2.mp4';
+import Portrait from './assets/AboutUs.jpg';
 import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { TypeAnimation } from "react-type-animation";
-import LeafLogo from './assets/leaf_logo_negative.png'
+import LeafLogo from './assets/leaf_logo_negative_2.png'
 
 function App() {
     return (
@@ -28,13 +29,20 @@ function App() {
             <div className="lf-about" id="about">
                 <h1>Quem Somos?</h1>
                 <div className="lf-about__container">
+                    <div className="lf-about__container--text">
+                        <p>Sempre tive uma fascinação por línguas - os seus sons, as suas nuances culturais e o seu uso como instrumento de expressão. A minha educação na rica tapeçaria cultural da África do Sul proporcionou-me um privilégio único - mergulhar no mosaico vibrante da diversidade étnica. Isso não só proporcionou uma experiência enriquecedora, mas também aumentou a consciência dos desafios que enfrentamos ao tentar comunicar numa língua diferente.</p>
+                        <p>Como professora de inglês com quase três décadas de experiência, estou sediada em Portugal, onde dediquei a minha carreira a capacitar jovens adultos, profissionais e académicos. A minha jornada começou numa escola de línguas, Inglês Funcional, em Portugal, e pouco depois de concluir um mestrado em Educação, embarquei no contexto universitário na Universidade de Coimbra, em Portugal, e na Universidade de Durham, no Reino Unido.</p>
+                    </div>
+                    <img src={ Portrait } alt="Portrait"></img>
+                </div>
+                <div className="lf-about__container">
                     <img src={ LeafLogo } alt="Leaf Logo"></img>
-                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus iste odit temporibus suscipit mollitia saepe incidunt totam sequi quam facilis? Voluptate reprehenderit alias quisquam necessitatibus iusto fuga officiis, odit odio?</span>
+                    <span>A missão do L E A F é proporcionar aos aprendentes de inglês um centro abrangente onde possam adquirir competências linguísticas essenciais, aprimorar a fluência e aumentar a confiança na comunicação em inglês. Acredito firmemente que o sucesso na aprendizagem de uma língua não envolve apenas a aplicação de um conjunto de regras e prática regular, mas também um sentimento de segurança e confiança que ultrapassa os obstáculos de aprendizagem e promove uma aquisição aprimorada da língua.</span>
                 </div>
             </div>
             <div className="lf-bg-container">
                 <div className="lf-services" id="services">
-                    <h1>Serviços</h1>
+                    <h1 style={{ color: '#ffffff' }}>Serviços</h1>
                     <div className="lf-services__cards">
                        <h1>Inglês para Adultos</h1>
                        <div className="lf-services__cards-unit">
