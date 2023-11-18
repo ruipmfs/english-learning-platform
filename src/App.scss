@@ -126,13 +126,25 @@
       }
 
       &--price {
-        display: flex;
-        flex-direction: column;
-        color: gray;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        gap: 10px;
 
-        > h3 {
-          margin: 0;
+        &-module {
+          display: flex;
+          > h3 {
+            margin: 0;
+            color: grey;
+          }
+        }
+
+        &-values {
+          display: flex;
+          flex-direction: column;
+          > h3 {
+            margin: 0;
+            color: grey;
+          }
         }
       }
 

@@ -58,8 +58,13 @@ function App() {
                             </ul>
                             <span className="lf-services__cards-unit--description">O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos do curso. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança em cenários da vida real e a melhorar as suas competências de conversação e comunicação.</span>
                             <div className="lf-services__cards-unit--price">
-                                <h3>Preço</h3>
-                                <h3>--.--€</h3>
+                                <div className="lf-services__cards-unit--price-module">
+                                    <h3>Módulo: 10h</h3>
+                                </div>
+                                <div className="lf-services__cards-unit--price-values">
+                                    <h3>Grupos/hora: 160,00€</h3>
+                                    <h3>Individual/hora: 30,00€</h3>
+                                </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
@@ -76,8 +81,13 @@ function App() {
                             </ul>
                             <span className="lf-services__cards-unit--description">Este curso pode ser personalizado com base nas necessidades específicas dos participantes e dos setores em que trabalham. O objetivo é equipar os participantes com as competências linguísticas e de comunicação necessárias para se destacarem nas suas carreiras profissionais e se envolverem efetivamente na comunidade empresarial global.</span>
                             <div className="lf-services__cards-unit--price">
-                                <h3>Preço</h3>
-                                <h3>--.--€</h3>
+                                <div className="lf-services__cards-unit--price-module">
+                                    <h3>Módulo: 10h</h3>
+                                </div>
+                                <div className="lf-services__cards-unit--price-values">
+                                    <h3>Grupos/hora: 160,00€</h3>
+                                    <h3>Individual/hora: 30,00€</h3>
+                                </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
@@ -99,8 +109,13 @@ function App() {
                             </ul>
                             <span className="lf-services__cards-unit--description">O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) dos participantes. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança no âmbito académico. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas.</span>
                             <div className="lf-services__cards-unit--price">
-                                <h3>Preço</h3>
-                                <h3>--.--€</h3>
+                                <div className="lf-services__cards-unit--price-module">
+                                    <h3>Módulo: 10h</h3>
+                                </div>
+                                <div className="lf-services__cards-unit--price-values">
+                                    <h3>Grupos/hora: 170,00€</h3>
+                                    <h3>Individual/hora: 32,00€</h3>
+                                </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
@@ -117,8 +132,13 @@ function App() {
                             </ul>
                             <span className="lf-services__cards-unit--description">O conteúdo e a estrutura deste curso podem variar dependendo da instituição e das disciplinas académicas específicas dos alunos. O objetivo é ajudar os alunos a se tornarem comunicadores e académicos eficazes e confiantes nas suas áreas de estudo escolhidas. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas.</span>
                             <div className="lf-services__cards-unit--price">
-                                <h3>Preço</h3>
-                                <h3>--.--€</h3>
+                                <div className="lf-services__cards-unit--price-module">
+                                    <h3>Módulo: 10h</h3>
+                                </div>
+                                <div className="lf-services__cards-unit--price-values">
+                                    <h3>Grupos/hora: 170,00€</h3>
+                                    <h3>Individual/hora: 32,00€</h3>
+                                </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
@@ -138,8 +158,13 @@ function App() {
                             </ul>
                             <p className="lf-services__cards-unit--description"></p>
                             <div className="lf-services__cards-unit--price">
-                                <h3>Preço</h3>
-                                <h3>--.--€</h3>
+                                <div className="lf-services__cards-unit--price-module">
+                                    <h3>Módulo: 10h</h3>
+                                </div>
+                                <div className="lf-services__cards-unit--price-values">
+                                    <h3>Grupos/hora: 180,00€</h3>
+                                    <h3>Individual/hora: 35,00€</h3>
+                                </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
@@ -162,8 +187,13 @@ function App() {
                             </ul>
                             <p className="lf-services__cards-unit--description">O conteúdo do curso pode variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos específicos do curso. O objetivo é ajudar os indivíduos a se tornarem comunicadores confiantes e eficazes em situações de falar em público, seja num contexto profissional ou pessoal.</p>
                             <div className="lf-services__cards-unit--price">
-                                <h3>Preço</h3>
-                                <h3>--.--€</h3>
+                                <div className="lf-services__cards-unit--price-module">
+                                    <h3>Módulo: 10h</h3>
+                                </div>
+                                <div className="lf-services__cards-unit--price-values">
+                                    <h3>Grupos/hora: 170,00€</h3>
+                                    <h3>Individual/hora: 32,00€</h3>
+                                </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">Contacte-nos</a>
