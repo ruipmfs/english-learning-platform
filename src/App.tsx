@@ -10,12 +10,12 @@ import { TypeAnimation } from "react-type-animation";
 import LeafLogo from './assets/leaf_logo_negative_2.png'
 
 function App() {
-    const QuotesStyle = {
+    const QuotesStyle: React.CSSProperties = {
         position: 'relative', // Set position to relative for pseudo-elements
         zIndex: -1,
       };
     
-    const Quotes1Style = {
+    const Quotes1Style: React.CSSProperties = {
         content: '""',
         backgroundImage: `url(${Quotes1})`,
         backgroundSize: '80px 80px',
@@ -28,7 +28,7 @@ function App() {
         opacity: 0.1, // Set opacity
     };
 
-    const Quotes2Style = {
+    const Quotes2Style: React.CSSProperties = {
         content: '""',
         backgroundImage: `url(${Quotes2})`,
         backgroundSize: '80px 80px',
