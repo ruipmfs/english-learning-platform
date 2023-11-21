@@ -1,6 +1,8 @@
 import './App.scss';
 import BackgroundVid from './assets/background2.mp4';
 import Portrait from './assets/AboutUs.jpg';
+import Quotes1 from './assets/quotes1.png';
+import Quotes2 from './assets/quotes2.png';
 import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -8,6 +10,37 @@ import { TypeAnimation } from "react-type-animation";
 import LeafLogo from './assets/leaf_logo_negative_2.png'
 
 function App() {
+    const QuotesStyle = {
+        position: 'relative', // Set position to relative for pseudo-elements
+        zIndex: -1,
+      };
+    
+    const Quotes1Style = {
+        content: '""',
+        backgroundImage: `url(${Quotes1})`,
+        backgroundSize: '80px 80px',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top left',
+        position: 'absolute',
+        top: 20,
+        left: 20,
+        padding: '60px', // Add padding
+        opacity: 0.1, // Set opacity
+    };
+
+    const Quotes2Style = {
+        content: '""',
+        backgroundImage: `url(${Quotes2})`,
+        backgroundSize: '80px 80px',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'bottom right',
+        position: 'absolute',
+        bottom: 20,
+        right: 20,
+        padding: '80px', // Add padding
+        opacity: 0.1, // Set opacity
+    };
+
     return (
         <div className="lf-homepage">
             <video autoPlay loop muted playsInline className="lf-homepage__background-vid">
@@ -38,6 +71,20 @@ function App() {
                 <div className="lf-about__container">
                     <img src={ LeafLogo } alt="Leaf Logo"></img>
                     <span>A missão do L E A F é proporcionar aos aprendentes de inglês um centro abrangente onde possam adquirir competências linguísticas essenciais, aprimorar a fluência e aumentar a confiança na comunicação em inglês. Acredito firmemente que o sucesso na aprendizagem de uma língua não envolve apenas a aplicação de um conjunto de regras e prática regular, mas também um sentimento de segurança e confiança que ultrapassa os obstáculos de aprendizagem e promove uma aquisição aprimorada da língua.</span>
+                </div>
+                <div className="lf-about__mentions">
+                    <div className="lf-about__mentions-unit" style={QuotesStyle}>
+                        <span className="lf-about__mentions-unit--text lf-italic">Having classes with Michelle was a transformative experience. Her guidance helped me enhance my English skills and gain the confidence to actively contribute in a business setting, especially during crucial stakeholder meetings and discussions. I'm immensely grateful for her support and mentorship.</span>
+                        <span>Pedro Caetano, MD</span>
+                        <div style={Quotes1Style}></div>
+                        <div style={Quotes2Style}></div>
+                    </div>
+                    <div className="lf-about__mentions-unit" style={QuotesStyle}>
+                        <span className="lf-about__mentions-unit--text lf-italic">Michelle is one of the most talented and creative language professionals we have employed. Her awareness of pedagogical materials preparation, classroom methodologies and student needs, together with her complete dedication and professionalism, make her one of our most valued teachers.</span>
+                        <span>Steve Kirk, University of Durham, UK</span>
+                        <div style={Quotes1Style}></div>
+                        <div style={Quotes2Style}></div>
+                    </div>
                 </div>
             </div>
             <div className="lf-bg-container">
