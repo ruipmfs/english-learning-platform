@@ -51,12 +51,13 @@ function App() {
         opacity: 0.1, // Set opacity
     };
 
-    // @ts-ignore
+
     return (
         <div className="lf-homepage">
             <video autoPlay loop muted playsInline className="lf-homepage__background-vid">
                 <source src={BackgroundVid} type="video/mp4"></source>
             </video>
+            {/* @ts-ignore*/}
             <Header changeLanguage={ updateLang } />
             <div className="lf-homepage__container">
                 <TypeAnimation className="lf-homepage__container__type-animation"

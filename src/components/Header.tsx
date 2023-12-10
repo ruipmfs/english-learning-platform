@@ -9,8 +9,12 @@ import UKIcon from '../assets/icon-uk.png';
 import { connect } from 'react-redux';
 import { toggleLanguage } from '../store';
 
+interface HeaderProps {
+    changeLanguage: () => void;
+}
+
 // @ts-ignore
-const Header = ({ changeLanguage }) => {
+const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const checkIsScrolled = () => {
         if (window.scrollY >= 80) {
