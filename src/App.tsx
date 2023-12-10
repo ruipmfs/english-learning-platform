@@ -8,11 +8,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { TypeAnimation } from "react-type-animation";
 import LeafLogo from './assets/leaf_logo_negative_2.png'
-import React, {useState} from "react";
+import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleLanguage } from './store';
 
 function App() {
+    // @ts-ignore
     const isPortuguese = useSelector((state) => state.isPortuguese);
     const dispatch = useDispatch();
     const updateLang = () => {
@@ -50,6 +51,7 @@ function App() {
         opacity: 0.1, // Set opacity
     };
 
+    // @ts-ignore
     return (
         <div className="lf-homepage">
             <video autoPlay loop muted playsInline className="lf-homepage__background-vid">

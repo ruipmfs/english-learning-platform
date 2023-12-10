@@ -9,6 +9,7 @@ import UKIcon from '../assets/icon-uk.png';
 import { connect } from 'react-redux';
 import { toggleLanguage } from '../store';
 
+// @ts-ignore
 const Header = ({ changeLanguage }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const checkIsScrolled = () => {
@@ -68,10 +69,12 @@ const Header = ({ changeLanguage }) => {
         );
     }
 }
+// @ts-ignore
 const mapStateToProps = (state) => ({
     isPortuguese: state.isPortuguese,
 });
 
+// @ts-ignore
 const mapDispatchToProps = (dispatch) => ({
     changeLanguage: () => dispatch(toggleLanguage()),
 });
