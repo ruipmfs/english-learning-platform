@@ -24,6 +24,13 @@
     gap: 80px;
     margin-right: 80px;
 
+    &-lang {
+      > img {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
     > a {
       font-size: x-large;
       text-decoration: none;
@@ -52,6 +59,10 @@
 .lf-header-white {
   background: white;
   transition: all 0.5s;
+
+  .lf-header__container {
+    background: white;
+  }
 
   > nav {
     > a {

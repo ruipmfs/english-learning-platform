@@ -3,9 +3,13 @@ import LeafLogoNegative from '../assets/leaf_logo_negative_2.png'
 import '../sass/_header.scss'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import PortugalIcon from '../assets/icon-portugal.png';
+import UKIcon from '../assets/icon-uk.png';
+import { connect } from 'react-redux';
+import { toggleLanguage } from '../store';
 
-const Header = () => {
+const Header = ({ changeLanguage }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const checkIsScrolled = () => {
         if (window.scrollY >= 80) {
@@ -27,9 +31,12 @@ const Header = () => {
     }
 
     const [isOpen, handleClick] = useState(false);
+    const [isPortuguese, setIsPortuguese] = useState(true);
 
     window.addEventListener('scroll', checkIsScrolled);
     window.addEventListener('resize', checkIsMobile);
+
+    console.log("aqui" + isMobile)
 
     if (isMobile) {
         return (
@@ -39,9 +46,10 @@ const Header = () => {
                     <a className="lf-header__button" onClick={ () => handleClick(!isOpen) }><FontAwesomeIcon icon={faChevronDown} beat style={(isOpen || isScrolled) ? {color: "#000000", height: 40, width: 40} : {color: "#ffffff", height: 40, width: 40}} /></a>
                 </div>
                 {isOpen && <nav className="lf-header__nav">
-                    <a href="#about">Quem Somos?</a>
+                    <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
                     <a href="#services">Serviços</a>
                     <a href="#contact">Contacte-nos</a>
+                    <a className="lf-header__nav-lang" onClick={() => { changeLanguage(); setIsPortuguese(!isPortuguese); }}><img src={isPortuguese ? PortugalIcon : UKIcon} alt="" /></a>
                 </nav>}
             </div>
         );
@@ -51,12 +59,21 @@ const Header = () => {
             <div className={isScrolled ? 'lf-header lf-header-white' : 'lf-header'}>
                 <a className="lf-header__image" href="#"><img src={isScrolled ? LeafLogoNegative : LeafLogo} alt="Logo"></img></a>
                 <nav className="lf-header__nav">
-                    <a href="#about">Quem Somos?</a>
-                    <a href="#services">Serviços</a>
-                    <a href="#contact">Contacte-nos</a>
+                    <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
+                    <a href="#services">{ isPortuguese ? "Serviços" : "Services"}</a>
+                    <a href="#contact">{ isPortuguese ? "Contacte-nos" : "Contact us"}</a>
+                    <a className="lf-header__nav-lang" onClick={() => { changeLanguage(); setIsPortuguese(!isPortuguese); }}><img src={isPortuguese ? PortugalIcon : UKIcon} alt="" /></a>
                 </nav>
             </div>
         );
     }
 }
-export default Header
+const mapStateToProps = (state) => ({
+    isPortuguese: state.isPortuguese,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+    changeLanguage: () => dispatch(toggleLanguage()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

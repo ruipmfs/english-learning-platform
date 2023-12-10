@@ -80,7 +80,7 @@
       grid-template-rows: 1fr 0.2fr;
       gap: 10px;
       color: black;
-      background: #f2e7d7;
+      background: #98a077;
       border-radius: 8px;
       padding: 10px;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -156,7 +156,6 @@
           display: flex;
           > h3 {
             margin: 0;
-            color: grey;
           }
         }
 
@@ -165,7 +164,6 @@
           flex-direction: column;
           > h3 {
             margin: 0;
-            color: grey;
           }
         }
       }
@@ -193,12 +191,41 @@
 
 .lf-contact {
   display: flex;
-  height: 700px;
+  flex-direction: column;
+  margin-bottom: 40px;
   padding: 0 32px;
   padding-top: 90px;
 
   > h1 {
     color: black;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #98a077;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    border-radius: 8px;
+
+    &--mail {
+      display: flex;
+      flex-direction: column;
+    }
+    &--phone {
+      display: flex;
+      flex-direction: column;
+
+      &__unit {
+        display: flex;
+        gap:8px;
+
+      }
+    }
+    &--social {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -208,6 +235,9 @@
 
 .lf-bold {
   font-weight: bold;
+}
+.lf-black {
+  color: black;
 }
 
 
@@ -241,6 +271,15 @@
         color: black;
         width: 100%;
       }
+    }
+  }
+
+  .lf-about {
+    &__mentions {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
     }
   }
 
@@ -305,7 +344,7 @@
           > a {
             border-radius: 4px;
             color: white;
-            background: #3eb14a;
+            background: #6b784f;
             text-decoration: none;
             padding: 14px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
