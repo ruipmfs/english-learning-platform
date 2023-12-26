@@ -1,5 +1,5 @@
-import LeafLogo from '../assets/leaf_logo_2.png'
-import LeafLogoNegative from '../assets/leaf_logo_negative_2.png'
+import LeafLogo from '../assets/leaf_logo_3_slogan.png'
+import LeafLogoNegative from '../assets/leaf_logo_3_slogan_negative.png'
 import '../sass/_header.scss'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

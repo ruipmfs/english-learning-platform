@@ -7,8 +7,8 @@ import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { TypeAnimation } from "react-type-animation";
-import LeafLogo from './assets/leaf_logo_negative_2.png'
-import React from "react";
+import LeafLogo from './assets/leaf_logo_3_negative.png'
+import React, {useState} from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleLanguage } from './store';
 
@@ -51,6 +51,17 @@ function App() {
         opacity: 0.1, // Set opacity
     };
 
+    const [isScrolled, setIsScrolled] = useState(false);
+    const checkIsScrolled = () => {
+        if (window.scrollY >= 80) {
+            setIsScrolled(true)
+        }
+        else {
+            setIsScrolled(false)
+        }
+    }
+
+    window.addEventListener('scroll', checkIsScrolled);
 
     return (
         <div className="lf-homepage">
@@ -61,7 +72,7 @@ function App() {
             <Header changeLanguage={ updateLang } />
             <div className="lf-homepage__container">
                 <TypeAnimation className="lf-homepage__container__type-animation"
-                    style={{ whiteSpace: 'pre-line', height: '420', display: 'block' }}
+                    style={{ whiteSpace: 'pre-line', height: '420', display: 'block', fontFamily: "'Oranienbaum', cursive" }}
                     sequence={[
                         `Live\nEnglish\nAnd\nFly`,
                         2000,
@@ -69,13 +80,13 @@ function App() {
                     ]}
                     repeat={Infinity}
                 />
+                { !isScrolled && <a href="#about" className="lf-homepage__button"><FontAwesomeIcon icon={faChevronDown} beat style={{color: "#ffffff", height: 50, width: 50}} /></a> }
             </div>
-            <a href="#about" className="lf-homepage__button"><FontAwesomeIcon icon={faChevronDown} beat style={{color: "#ffffff", height: 50, width: 50}} /></a>
             <div className="lf-about" id="about">
                 <h1>{isPortuguese ? "O que é a L E A F?" : "What is L E A F?"}</h1>
                 <div className="lf-about__container">
                     <div className="lf-about__container--text">
-                        <p>{ isPortuguese ? "Sempre tive uma fascinação por línguas - os seus sons, as suas nuances culturais e o seu uso como instrumento de expressão. A minha educação na rica tapeçaria cultural da África do Sul proporcionou-me um privilégio único - mergulhar no mosaico vibrante da diversidade étnica. Isso não só proporcionou uma experiência enriquecedora, mas também aumentou a consciência dos desafios que enfrentamos ao tentar comunicar numa língua diferente." : "I have always had a fascination for languages – their sounds, their cultural nuances, and their use as an instrument for expression. My upbringing in the culturally rich tapestry of South Africa has afforded me a unique privilege immersing myself in the vibrant mosaic of ethnic diversity. This not only provided an enriching experience but also heightened awareness of the challenges we encounter when trying to communicate in a different language."}</p>
+                        <p>{ isPortuguese ? "Sempre tive uma fascinação por línguas - os seus sons, as suas nuances culturais e o seu uso como instrumento de expressão. A minha educação na rica tapeçaria cultural da África do Sul proporcionou-me um privilégio único - mergulhar no mosaico vibrante da diversidade étnica. Isso não só proporcionou uma experiência enriquecedora, mas também aumentou a consciência dos desafios que enfrentamos ao tentar comunicar numa língua diferente." : "I have always had a fascination for languages – their sounds, their cultural nuances, and their use as an instrument for expression. My upbringing in the culturally rich tapestry of South Africa has afforded me the unique privilege of immersing myself in the vibrant mosaic of ethnic diversity. This not only provided an enriching experience but also heightened awareness of the challenges we encounter when trying to communicate in a different language."}</p>
                         <p>{ isPortuguese ? "Como professora de inglês com quase três décadas de experiência, estou sediada em Portugal, onde dediquei a minha carreira a capacitar jovens adultos, profissionais e académicos. A minha jornada começou numa escola de línguas, Inglês Funcional, em Portugal, e pouco depois de concluir um mestrado em Educação, embarquei no contexto universitário na Universidade de Coimbra, em Portugal, e na Universidade de Durham, no Reino Unido." : "As an English teacher boasting nearly three decades of expertise, I am based in\n" +
                             "Portugal, where I have dedicated my career to empowering young adults,\n" +
                             "professionals and academics. My journey began at a language school, Inglês\n" +
@@ -309,11 +320,11 @@ function App() {
                 <h3 className="lf-black">{isPortuguese ? "Como podemos ajudar?" : "How can we help?"}</h3>
                 <div className="lf-contact-container">
                     <div className="lf-contact-container--mail">
-                        <h2 className="lf-black">{isPortuguese ? "Entre em Contacto!" : "Get in touch!"}</h2>
-                        <a className="lf-black" href="mailto:leaf.live.english@gmail.com" target="__blank">{isPortuguese ? "Envie-nos um email >" : "Send us an email >"}</a>
+                        <h2 className="lf-black">{isPortuguese ? "Entre em Contacto!" : "Drop a line!"}</h2>
+                        <a className="lf-black" href="mailto:leaf.live.english@gmail.com" target="__blank">{isPortuguese ? "leaf.live.english@gmail.com" : "leaf.live.english@gmail.com"}</a>
                     </div>
                     <div className="lf-contact-container--phone">
-                        <h2 className="lf-black">{isPortuguese ? "Dê um toque!" : "Drop a line!"}</h2>
+                        <h2 className="lf-black">{isPortuguese ? "Dê um toque!" : "Get in touch!"}</h2>
                         <div className="lf-contact-container--phone__unit">
                             <span className="lf-black">(+351) 934 524 501</span>
                         </div>
