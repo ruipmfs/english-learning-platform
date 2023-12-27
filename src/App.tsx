@@ -3,6 +3,9 @@ import BackgroundVid from './assets/background2.mp4';
 import Portrait from './assets/AboutUs.jpg';
 import Quotes1 from './assets/quotes1.png';
 import Quotes2 from './assets/quotes2.png';
+import Instagram from './assets/instagram.svg';
+import Facebook from './assets/facebook.svg';
+import LinkedIn from './assets/linkedin.svg';
 import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -152,8 +155,8 @@ function App() {
                                     <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos/hora: 160,00€" : "Groups/hour: 160,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual/hora: 30,00€" : "Individual/hour: 30,00€"}</h3>
+                                    <h3>{isPortuguese ? "Grupos: 160,00€" : "Groups: 160,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 30,00€" : "Individual: 30,00€"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -182,8 +185,8 @@ function App() {
                                     <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos/hora: 160,00€" : "Groups/hour: 160,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual/hora: 30,00€" : "Individual/hour: 30,00€"}</h3>
+                                    <h3>{isPortuguese ? "Grupos: 160,00€" : "Groups: 160,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 30,00€" : "Individual: 30,00€"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -214,8 +217,8 @@ function App() {
                                     <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos/hora: 170,00€" : "Groups/hour: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual/hora: 32,00€" : "Individual/hour: 32,00€"}</h3>
+                                    <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 32,00€" : "Individual: 32,00€"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -246,8 +249,8 @@ function App() {
                                     <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos/hora: 170,00€" : "Groups/hour: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual/hora: 32,00€" : "Individual/hour: 32,00€"}</h3>
+                                    <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 32,00€" : "Individual: 32,00€"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -272,8 +275,8 @@ function App() {
                                     <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos/hora: 180,00€" : "Groups/hour: 180,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual/hora: 35,00€" : "Individual/hour: 35,00€"}</h3>
+                                    <h3>{isPortuguese ? "Grupos: 180,00€" : "Groups: 180,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 35,00€" : "Individual: 35,00€"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -304,8 +307,8 @@ function App() {
                                     <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos/hora: 170,00€" : "Groups/hour: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual/hora: 32,00€" : "Individual/hour: 32,00€"}</h3>
+                                    <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 32,00€" : "Individual: 32,00€"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -322,6 +325,7 @@ function App() {
                     <div className="lf-contact-container--mail">
                         <h2 className="lf-black">{isPortuguese ? "Entre em Contacto!" : "Drop a line!"}</h2>
                         <a className="lf-black" href="mailto:leaf.live.english@gmail.com" target="__blank">{isPortuguese ? "leaf.live.english@gmail.com" : "leaf.live.english@gmail.com"}</a>
+                        <a className="lf-black" href="mailto:geral@youleaf.pt" target="__blank">{isPortuguese ? "geral@youleaf.pt" : "geral@youleaf.pt"}</a>
                     </div>
                     <div className="lf-contact-container--phone">
                         <h2 className="lf-black">{isPortuguese ? "Dê um toque!" : "Get in touch!"}</h2>
@@ -331,7 +335,17 @@ function App() {
                     </div>
                     <div className="lf-contact-container--social">
                         <h2 className="lf-black">{isPortuguese ? "Mantenha-se a par!" : "Keep on track!"}</h2>
-                        <span className="lf-black">SOCIAL MEDIA LINKS!!!</span>
+                        <div className="lf-contact-container--social__media">
+                            <a href="https://www.linkedin.com/in/leaf-learn-english-and-fly-1b18872a6/" target="__blank">
+                                <img src={LinkedIn} alt=""/>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61555054377917&sk=grid" target="__blank">
+                                <img src={Facebook} alt=""/>
+                            </a>
+                            <a href="https://www.instagram.com/leaf.live.english/" target="__blank">
+                                <img src={Instagram} alt=""/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

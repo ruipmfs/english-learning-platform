@@ -228,6 +228,11 @@
     &--social {
       display: flex;
       flex-direction: column;
+
+      &__media {
+        display: flex;
+        gap: 12px;
+      }
     }
   }
 }

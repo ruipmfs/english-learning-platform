@@ -1,5 +1,7 @@
 import LeafLogo from '../assets/leaf_logo_3_slogan.png'
+import LeafLogoMobile from '../assets/leaf_logo_3.png'
 import LeafLogoNegative from '../assets/leaf_logo_3_slogan_negative.png'
+import LeafLogoNegativeMobile from '../assets/leaf_logo_3_negative.png'
 import '../sass/_header.scss'
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -47,14 +49,18 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
         return (
             <div className={isScrolled ? 'lf-header lf-header-white' : 'lf-header' && isOpen ? 'lf-header lf-header-white' : 'lf-header'}>
                 <div className="lf-header__container">
-                    <a className="lf-header__image" href="#"><img src={(isScrolled || isOpen) ? LeafLogoNegative : LeafLogo} alt="Logo"></img></a>
+                    <a className="lf-header__image" href="#"><img src={(isScrolled || isOpen) ? LeafLogoNegativeMobile : LeafLogoMobile} alt="Logo"></img></a>
                     <a className="lf-header__button" onClick={ () => handleClick(!isOpen) }><FontAwesomeIcon icon={faChevronDown} beat style={(isOpen || isScrolled) ? {color: "#000000", height: 40, width: 40} : {color: "#ffffff", height: 40, width: 40}} /></a>
                 </div>
                 {isOpen && <nav className="lf-header__nav">
                     <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
                     <a href="#services">Serviços</a>
                     <a href="#contact">Contacte-nos</a>
-                    <a className="lf-header__nav-lang" onClick={() => { changeLanguage(); setIsPortuguese(!isPortuguese); }}><img src={isPortuguese ? PortugalIcon : UKIcon} alt="" /></a>
+                    <div className="lf-header__nav-lang">
+                        <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(true); }}>PT</button>
+                        <span>|</span>
+                        <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(false); }}>EN</button>
+                    </div>
                 </nav>}
             </div>
         );
@@ -67,7 +73,11 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
                     <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
                     <a href="#services">{ isPortuguese ? "Serviços" : "Services"}</a>
                     <a href="#contact">{ isPortuguese ? "Contacte-nos" : "Contact us"}</a>
-                    <a className="lf-header__nav-lang" onClick={() => { changeLanguage(); setIsPortuguese(!isPortuguese); }}><img src={isPortuguese ? PortugalIcon : UKIcon} alt="" /></a>
+                    <div className="lf-header__nav-lang">
+                        <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(true); }}>PT</button>
+                        <span>|</span>
+                        <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(false); }}>EN</button>
+                    </div>
                 </nav>
             </div>
         );
