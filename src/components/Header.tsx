@@ -26,6 +26,7 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
     }
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+    const [hasSlogan, setHasSlogan] = useState(window.innerWidth >= 1400);
     const checkIsMobile = () => {
         if (window.innerWidth <= 900) {
             setIsMobile(true)
@@ -35,13 +36,21 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
         }
     }
 
+    const checkHasSlogan = () => {
+        if (window.innerWidth >= 1400) {
+            setHasSlogan(true)
+        }
+        else {
+            setHasSlogan(false)
+        }
+    }
+
     const [isOpen, handleClick] = useState(false);
     const [isPortuguese, setIsPortuguese] = useState(true);
 
     window.addEventListener('scroll', checkIsScrolled);
+    window.addEventListener('resize', checkHasSlogan);
     window.addEventListener('resize', checkIsMobile);
-
-    console.log("aqui" + isMobile)
 
     if (isMobile) {
         return (
@@ -66,7 +75,8 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
     else {
         return (
             <div className={isScrolled ? 'lf-header lf-header-white' : 'lf-header'}>
-                <a className="lf-header__image" href="#"><img src={isScrolled ? LeafLogoNegative : LeafLogo} alt="Logo"></img></a>
+                {hasSlogan && <a className="lf-header__image" href="#"><img src={isScrolled ? LeafLogoNegative : LeafLogo} alt="Logo"></img></a>}
+                {!hasSlogan && <a className="lf-header__image" href="#"><img src={isScrolled ? LeafLogoNegativeMobile : LeafLogoMobile} alt="Logo"></img></a>}
                 <nav className="lf-header__nav">
                     <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
                     <a href="#services">{ isPortuguese ? "Serviços" : "Services"}</a>

@@ -156,7 +156,7 @@ function App() {
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
                                     <h3>{isPortuguese ? "Grupos: 160,00€" : "Groups: 160,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 30,00€" : "Individual: 30,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 30,00€/hora" : "Individual: 30,00€/hour"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -186,7 +186,7 @@ function App() {
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
                                     <h3>{isPortuguese ? "Grupos: 160,00€" : "Groups: 160,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 30,00€" : "Individual: 30,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 30,00€/hora" : "Individual: 30,00€/hour"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -218,7 +218,7 @@ function App() {
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
                                     <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 32,00€" : "Individual: 32,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 32,00€/hora" : "Individual: 32,00€/hour"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -250,7 +250,7 @@ function App() {
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
                                     <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 32,00€" : "Individual: 32,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 32,00€/hora" : "Individual: 32,00€/hour"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -276,7 +276,7 @@ function App() {
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
                                     <h3>{isPortuguese ? "Grupos: 180,00€" : "Groups: 180,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 35,00€" : "Individual: 35,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 35,00€/hora" : "Individual: 35,00€/hour"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -308,7 +308,7 @@ function App() {
                                 </div>
                                 <div className="lf-services__cards-unit--price-values lf-black">
                                     <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 32,00€" : "Individual: 32,00€"}</h3>
+                                    <h3>{isPortuguese ? "Individual: 32,00€/hora" : "Individual: 32,00€/hour"}</h3>
                                 </div>
                             </div>
                             <div className="lf-services__cards-unit--button">
@@ -324,7 +324,6 @@ function App() {
                 <div className="lf-contact-container">
                     <div className="lf-contact-container--mail">
                         <h2 className="lf-black">{isPortuguese ? "Entre em Contacto!" : "Drop a line!"}</h2>
-                        <a className="lf-black" href="mailto:leaf.live.english@gmail.com" target="__blank">{isPortuguese ? "leaf.live.english@gmail.com" : "leaf.live.english@gmail.com"}</a>
                         <a className="lf-black" href="mailto:geral@youleaf.pt" target="__blank">{isPortuguese ? "geral@youleaf.pt" : "geral@youleaf.pt"}</a>
                     </div>
                     <div className="lf-contact-container--phone">

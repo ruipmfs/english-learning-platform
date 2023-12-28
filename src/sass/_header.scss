@@ -57,6 +57,12 @@
     }
   }
 
+  &__button {
+    > svg {
+      padding: 20px;
+    }
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
