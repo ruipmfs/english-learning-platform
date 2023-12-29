@@ -120,7 +120,7 @@ function App() {
                     </div>
                     <div className="lf-about__mentions-unit" style={QuotesStyle}>
                         <span className="lf-about__mentions-unit--text lf-italic">Michelle is one of the most talented and creative language professionals we have employed. Her awareness of pedagogical materials preparation, classroom methodologies and student needs, together with her complete dedication and professionalism, make her one of our most valued teachers.</span>
-                        <span>Steve Kirk, University of Durham, UK</span>
+                        <span>Steve Kirk, Durham University, UK</span>
                         <div style={Quotes1Style}></div>
                         <div style={Quotes2Style}></div>
                     </div>
@@ -267,7 +267,7 @@ function App() {
                                 <li>PET</li>
                                 <li>FCE</li>
                                 <li>CAE</li>
-                                <li>IELTS</li>
+                                <li>IELTS (British Council)</li>
                             </ul>
                             <p className="lf-services__cards-unit--description"></p>
                             <div className="lf-services__cards-unit--price">
