@@ -60,9 +60,9 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
                     <a className="lf-header__button" onClick={ () => handleClick(!isOpen) }><FontAwesomeIcon icon={faChevronDown} beat style={(isOpen || isScrolled) ? {color: "#000000", height: 40, width: 40} : {color: "#ffffff", height: 40, width: 40}} /></a>
                 </div>
                 {isOpen && <nav className="lf-header__nav">
-                    <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
-                    <a href="#services">Serviços</a>
-                    <a href="#contact">Contacte-nos</a>
+                    <a href="#about" onClick={ () => handleClick(!isOpen) }>{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
+                    <a href="#services" onClick={ () => handleClick(!isOpen) }>Serviços</a>
+                    <a href="#contact" onClick={ () => handleClick(!isOpen) }>Contacte-nos</a>
                     <div className="lf-header__nav-lang">
                         <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(true); }}>PT</button>
                         <span>|</span>
