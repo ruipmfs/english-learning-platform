@@ -151,13 +151,12 @@ function App() {
                                 "improve their conversational and\n" +
                                 "communication skills."}</span>
                             <div className="lf-services__cards-unit--price">
-                                <div className="lf-services__cards-unit--price-module lf-black">
-                                    <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
-                                </div>
-                                <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos: 160,00€" : "Groups: 160,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 30,00€/hora" : "Individual: 30,00€/hour"}</h3>
-                                </div>
+                                <h3 className="lf-black">{ isPortuguese ? "Módulo:" : "Module:" }</h3>
+                                <h3 className="lf-black">10h</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
+                                <h3 className="lf-black">160,00€</h3>
+                                <h3 className="lf-black">Individual:</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "30,00€/hora:" : "30,00€/hour:" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">{isPortuguese ? "Contacte-nos" : "Contact us"}</a>
@@ -181,13 +180,12 @@ function App() {
                                 "careers and engage effectively in the\n" +
                                 "global business community."}</span>
                             <div className="lf-services__cards-unit--price">
-                                <div className="lf-services__cards-unit--price-module lf-black">
-                                    <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
-                                </div>
-                                <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos: 160,00€" : "Groups: 160,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 30,00€/hora" : "Individual: 30,00€/hour"}</h3>
-                                </div>
+                                <h3 className="lf-black">{ isPortuguese ? "Módulo:" : "Module:" }</h3>
+                                <h3 className="lf-black">10h</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
+                                <h3 className="lf-black">160,00€</h3>
+                                <h3 className="lf-black">Individual:</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "30,00€/hora:" : "30,00€/hour:" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">{isPortuguese ? "Contacte-nos" : "Contact us"}</a>
@@ -213,13 +211,12 @@ function App() {
                                 "skills acquired in this course are\n" +
                                 "transferable to other languages."}</span>
                             <div className="lf-services__cards-unit--price">
-                                <div className="lf-services__cards-unit--price-module lf-black">
-                                    <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
-                                </div>
-                                <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 32,00€/hora" : "Individual: 32,00€/hour"}</h3>
-                                </div>
+                                <h3 className="lf-black">{ isPortuguese ? "Módulo:" : "Module:" }</h3>
+                                <h3 className="lf-black">10h</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
+                                <h3 className="lf-black">170,00€</h3>
+                                <h3 className="lf-black">Individual:</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "32,00€/hora:" : "32,00€/hour:" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">{isPortuguese ? "Contacte-nos" : "Contact us"}</a>
@@ -245,13 +242,12 @@ function App() {
                                 "course are transferable to other\n" +
                                 "languages."}</span>
                             <div className="lf-services__cards-unit--price">
-                                <div className="lf-services__cards-unit--price-module lf-black">
-                                    <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
-                                </div>
-                                <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 32,00€/hora" : "Individual: 32,00€/hour"}</h3>
-                                </div>
+                                <h3 className="lf-black">{ isPortuguese ? "Módulo:" : "Module:" }</h3>
+                                <h3 className="lf-black">10h</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
+                                <h3 className="lf-black">170,00€</h3>
+                                <h3 className="lf-black">Individual:</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "32,00€/hora:" : "32,00€/hour:" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">{isPortuguese ? "Contacte-nos" : "Contact us"}</a>
@@ -271,13 +267,12 @@ function App() {
                             </ul>
                             <p className="lf-services__cards-unit--description"></p>
                             <div className="lf-services__cards-unit--price">
-                                <div className="lf-services__cards-unit--price-module lf-black">
-                                    <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
-                                </div>
-                                <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos: 180,00€" : "Groups: 180,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 35,00€/hora" : "Individual: 35,00€/hour"}</h3>
-                                </div>
+                                <h3 className="lf-black">{ isPortuguese ? "Módulo:" : "Module:" }</h3>
+                                <h3 className="lf-black">10h</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
+                                <h3 className="lf-black">180,00€</h3>
+                                <h3 className="lf-black">Individual:</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "35,00€/hora:" : "35,00€/hour:" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">{isPortuguese ? "Contacte-nos" : "Contact us"}</a>
@@ -303,13 +298,12 @@ function App() {
                                 "effective communicators in public speaking situations, whether in a professional or personal\n" +
                                 "context."}</p>
                             <div className="lf-services__cards-unit--price">
-                                <div className="lf-services__cards-unit--price-module lf-black">
-                                    <h3>{isPortuguese ? "Módulo: 10h" : "Module: 10h"}</h3>
-                                </div>
-                                <div className="lf-services__cards-unit--price-values lf-black">
-                                    <h3>{isPortuguese ? "Grupos: 170,00€" : "Groups: 170,00€"}</h3>
-                                    <h3>{isPortuguese ? "Individual: 32,00€/hora" : "Individual: 32,00€/hour"}</h3>
-                                </div>
+                                <h3 className="lf-black">{ isPortuguese ? "Módulo:" : "Module:" }</h3>
+                                <h3 className="lf-black">10h</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
+                                <h3 className="lf-black">170,00€</h3>
+                                <h3 className="lf-black">Individual</h3>
+                                <h3 className="lf-black">{ isPortuguese ? "32,00€/hora:" : "32,00€/hour:" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
                                 <a className="lf-services__cards-unit--button" href="#contact">{isPortuguese ? "Contacte-nos" : "Contact us"}</a>

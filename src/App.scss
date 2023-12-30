@@ -152,22 +152,13 @@
 
       &--price {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 10px;
 
-        &-module {
-          display: flex;
-          > h3 {
-            margin: 0;
-          }
-        }
-
-        &-values {
-          display: flex;
-          flex-direction: column;
-          > h3 {
-            margin: 0;
-          }
+        > h3 {
+          margin: 0 0;
         }
       }
 
