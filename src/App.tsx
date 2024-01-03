@@ -302,7 +302,7 @@ function App() {
                                 <h3 className="lf-black">10h</h3>
                                 <h3 className="lf-black">{ isPortuguese ? "Grupos:" : "Groups:" }</h3>
                                 <h3 className="lf-black">170,00€</h3>
-                                <h3 className="lf-black">Individual</h3>
+                                <h3 className="lf-black">Individual:</h3>
                                 <h3 className="lf-black">{ isPortuguese ? "32,00€/hora" : "32,00€/hour" }</h3>
                             </div>
                             <div className="lf-services__cards-unit--button">
