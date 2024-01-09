@@ -89,8 +89,8 @@ function App() {
                 <h1>{isPortuguese ? "O que é a L E A F?" : "What is L E A F?"}</h1>
                 <div className="lf-about__container">
                     <div className="lf-about__container--text">
-                        <p>{ isPortuguese ? "Sempre tive uma fascinação por línguas - os seus sons, as suas nuances culturais e o seu uso como instrumento de expressão. A minha educação na rica tapeçaria cultural da África do Sul proporcionou-me um privilégio único - mergulhar no mosaico vibrante da diversidade étnica. Isso não só proporcionou uma experiência enriquecedora, mas também aumentou a consciência dos desafios que enfrentamos ao tentar comunicar numa língua diferente." : "I have always had a fascination for languages – their sounds, their cultural nuances, and their use as an instrument for expression. My upbringing in the culturally rich tapestry of South Africa has afforded me the unique privilege of immersing myself in the vibrant mosaic of ethnic diversity. This not only provided an enriching experience but also heightened awareness of the challenges we encounter when trying to communicate in a different language."}</p>
-                        <p>{ isPortuguese ? "Como professora de inglês com quase três décadas de experiência, estou sediada em Portugal, onde dediquei a minha carreira a capacitar jovens adultos, profissionais e académicos. A minha jornada começou numa escola de línguas, Inglês Funcional, em Portugal, e pouco depois de concluir um mestrado em Educação, embarquei no contexto universitário na Universidade de Coimbra, em Portugal, e na Universidade de Durham, no Reino Unido." : "As an English teacher boasting nearly three decades of expertise, I am based in\n" +
+                        <p>{ isPortuguese ? "Sempre tive fascínio por línguas - os seus sons, as suas nuances culturais e o seu uso como instrumento de expressão. A minha educação na rica tapeçaria cultural da África do Sul proporcionou-me um privilégio único - mergulhar no mosaico vibrante da diversidade étnica. Isso não só proporcionou uma experiência enriquecedora, mas também aumentou a consciência dos desafios que enfrentamos ao tentar comunicar numa língua diferente." : "I have always had a fascination for languages – their sounds, their cultural nuances, and their use as an instrument for expression. My upbringing in the culturally rich tapestry of South Africa has afforded me the unique privilege of immersing myself in the vibrant mosaic of ethnic diversity. This not only provided an enriching experience but also heightened awareness of the challenges we encounter when trying to communicate in a different language."}</p>
+                        <p>{ isPortuguese ? "Como professora de inglês, com quase três décadas de experiência, estou sediada em Portugal, onde dediquei a minha carreira a capacitar jovens adultos, profissionais e académicos. A minha jornada começou numa escola de línguas, Inglês Funcional, em Portugal, e pouco depois de concluir um mestrado em Educação, embarquei no contexto universitário na Universidade de Coimbra, em Portugal, e na Universidade de Durham, no Reino Unido." : "As an English teacher boasting nearly three decades of expertise, I am based in\n" +
                             "Portugal, where I have dedicated my career to empowering young adults,\n" +
                             "professionals and academics. My journey began at a language school, Inglês\n" +
                             "Funcional, in Portugal and soon after completing a Master’s degree in\n" +
@@ -102,7 +102,7 @@ function App() {
                 <div className="lf-about__container">
                     <img src={ LeafLogo } alt="Leaf Logo"></img>
                     <span>{ isPortuguese ?
-                        "A missão do L E A F é proporcionar aos aprendentes de inglês um centro\n" +
+                        "A missão da L E A F é proporcionar aos alunos de inglês um centro\n" +
                         "abrangente onde possam adquirir competências linguísticas essenciais,\n" +
                         "aprimorar a fluência e aumentar a confiança na comunicação em inglês.\n" +
                         "Acredito firmemente que o sucesso na aprendizagem de uma língua não\n" +
@@ -164,14 +164,15 @@ function App() {
                        </div>
                        <div className="lf-services__cards-unit">
                             <h2 className="lf-services__cards-unit--title">{isPortuguese ? "Inglês para Comunicação Empresarial" : "English for Business Communication" }</h2>
-                            <ul className="lf-services__cards-unit--topics">
-                                <li>{isPortuguese ? "Vocabulário empresarial" : "Business Vocabulary"}</li>
-                                <li>{isPortuguese ? "Competências de comunicação empresarial" : "Business Communication Skills"}</li>
-                                <li>{isPortuguese ? "Comunicação intercultural" : "Cross-Cultural Communication"}</li>
-                                <li>{isPortuguese ? "Networking e socialização" : "Networking and Socialising"}</li>
-                                <li>{isPortuguese ? "Comunicação digital" : "Digital Communication"}</li>
-                            </ul>
-                            <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "Este curso pode ser personalizado com base nas necessidades específicas dos participantes e dos setores em que trabalham. O objetivo é equipar os participantes com as competências linguísticas e de comunicação necessárias para se destacarem nas suas carreiras profissionais e se envolverem efetivamente na comunidade empresarial global." : "This course may be customised based on\n" +
+                           <ul className="lf-services__cards-unit--topics">
+                               <li>{isPortuguese ? "Vocabulário empresarial" : "Business Vocabulary"}</li>
+                               <li>{isPortuguese ? "Competências de comunicação empresarial" : "Business Communication Skills"}</li>
+                               <li>{isPortuguese ? "Comunicação intercultural" : "Cross-Cultural Communication"}</li>
+                               <li><i>Networking</i>{isPortuguese ? " e socialização" : " and Socialising"}</li>
+                               <li>{isPortuguese ? "Comunicação digital" : "Digital Communication"}</li>
+                           </ul>
+
+                           <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "Este curso pode ser personalizado com base nas necessidades específicas dos participantes e dos setores em que trabalham. O objetivo é equipar os participantes com as competências linguísticas e de comunicação necessárias para se destacarem nas suas carreiras profissionais e se envolverem efetivamente na comunidade empresarial global." : "This course may be customised based on\n" +
                                 "the specific needs of the participants\n" +
                                 "and the industries they work in. The goal\n" +
                                 "is to equip participants with the\n" +
@@ -195,7 +196,7 @@ function App() {
                     <div className="lf-services__cards">
                        <h1>{isPortuguese ? "Inglês para Fins Académicos" : "English for Academic Purposes"}</h1>
                        <div className="lf-services__cards-unit">
-                            <h2 className="lf-services__cards-unit--title">{isPortuguese ? "Competências acadêmicas para estudantes a iniciar o Ensino Superior" : "Academic skills for Undergraduates"}</h2>
+                            <h2 className="lf-services__cards-unit--title">{isPortuguese ? "Competências académicas para estudantes a iniciar o Ensino Superior" : "Academic skills for Undergraduates"}</h2>
                             <ul className="lf-services__cards-unit--topics">
                                 <li>{isPortuguese ? "Vocabulário e Terminologia Académico" : "Academic Vocabulary and Terminology"}</li>
                                 <li>{isPortuguese ? "Leitura e compreensão de textos académicos" : "Reading and Understanding Academic Texts"}</li>
@@ -203,9 +204,9 @@ function App() {
                                 <li>{isPortuguese ? "Competências de escrita" : "Writing skills"}</li>
                                 <li>{isPortuguese ? "Técnicas de pesquisa" : "Research skills"}</li>
                                 <li>{isPortuguese ? "Técnicas de apresentação oral" : "Oral Presentation Skills"}</li>
-                                <li>{isPortuguese ? "Gerência de tempo e de estudo" : "Time Management & Study skills"}</li>
+                                <li>{isPortuguese ? "Gestão de tempo e de estudo" : "Time Management & Study skills"}</li>
                             </ul>
-                            <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) dos participantes. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança no âmbito académico. As competências obtidas podem ser transferidas para a técnicas de escrita, leitura e pesquisa em outras línguas." : "This course is designed for\n" +
+                            <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) dos participantes. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança no âmbito académico. As competências obtidas podem ser transferidas para as técnicas de escrita, leitura e pesquisa noutras línguas." : "This course is designed for\n" +
                                 "undergraduate students who are in\n" +
                                 "their initial years at university. The\n" +
                                 "skills acquired in this course are\n" +
@@ -289,11 +290,11 @@ function App() {
                                 <li>{isPortuguese ? "Análise do público" : "Audience analysis"}</li>
                                 <li>{isPortuguese ? "Fazer um discurso eficaz" : "Effective delivery"}</li>
                                 <li>{isPortuguese ? "Recursos visuais e tecnologia" : "Visual aids and technology"}</li>
-                                <li>{isPortuguese ? "Linguagem corporal e movimento" : "Body language and movement"}</li>
+                                <li>{isPortuguese ? "Linguagem corporal" : "Body language"}</li>
                                 <li>{isPortuguese ? "Responder a perguntas e interação com o público" : "Handling questions and audience interaction"}</li>
-                                <li>{isPortuguese ? "Géneros diferentes de discursos" : "Special types of speeches"}</li>
+                                <li>{isPortuguese ? "Modelos diferentes de discursos" : "Special types of speeches"}</li>
                             </ul>
-                            <p className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "O conteúdo do curso pode variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos específicos do curso. O objetivo é ajudar os indivíduos a se tornarem comunicadores confiantes e eficazes em situações de falar em público, seja num contexto profissional ou pessoal." : "The content of the course can vary based on the level (beginner, intermediate, advanced)\n" +
+                            <p className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "O conteúdo do curso pode variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos específicos do curso. O objetivo é ajudar os alunos a tornarem-se comunicadores confiantes e eficazes em situações de falar em público, seja num contexto profissional ou pessoal." : "The content of the course can vary based on the level (beginner, intermediate, advanced)\n" +
                                 "and the specific goals of the course. The aim is to help individuals become confident and\n" +
                                 "effective communicators in public speaking situations, whether in a professional or personal\n" +
                                 "context."}</p>
@@ -317,7 +318,7 @@ function App() {
                 <h3 className="lf-black">{isPortuguese ? "Como podemos ajudar?" : "How can we help?"}</h3>
                 <div className="lf-contact-container">
                     <div className="lf-contact-container--mail">
-                        <h2 className="lf-black">{isPortuguese ? "Entre em Contacto!" : "Drop a line!"}</h2>
+                        <h2 className="lf-black">{isPortuguese ? "Entre em contacto!" : "Drop a line!"}</h2>
                         <a className="lf-black" href="mailto:geral@youleaf.pt" target="__blank">{isPortuguese ? "geral@youleaf.pt" : "geral@youleaf.pt"}</a>
                     </div>
                     <div className="lf-contact-container--phone">
