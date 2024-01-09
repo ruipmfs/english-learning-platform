@@ -330,7 +330,7 @@ function App() {
                     <div className="lf-contact-container--social">
                         <h2 className="lf-black">{isPortuguese ? "Mantenha-se a par!" : "Keep on track!"}</h2>
                         <div className="lf-contact-container--social__media">
-                            <a href="https://www.linkedin.com/in/leaf-learn-english-and-fly-1b18872a6/" target="__blank">
+                            <a href="https://www.linkedin.com/feed/" target="__blank">
                                 <img src={LinkedIn} alt=""/>
                             </a>
                             <a href="https://www.facebook.com/profile.php?id=61555054377917&sk=grid" target="__blank">
