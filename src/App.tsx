@@ -94,7 +94,7 @@ function App() {
                             "Portugal, where I have dedicated my career to empowering young adults,\n" +
                             "professionals and academics. My journey began at a language school, Inglês\n" +
                             "Funcional, in Portugal and soon after completing a Master’s degree in\n" +
-                            "Education, ventured into the university context at Coimbra University in Portugal\n" +
+                            "Education, I ventured into the university context at Coimbra University in Portugal\n" +
                             "and Durham University in the United Kingdom."}</p>
                     </div>
                     <img src={ Portrait } alt="Portrait"></img>
@@ -134,13 +134,13 @@ function App() {
                        <div className="lf-services__cards-unit">
                             <h2 className="lf-services__cards-unit--title">{ isPortuguese ? "Inglês Geral para a Vida" : "General English for Life"}</h2>
                             <ul className="lf-services__cards-unit--topics">
-                                <li>{isPortuguese ? "Competências funcionais de linguagem" : "Functional Language Skills"}</li>
-                                <li>{isPortuguese ? "Conversas diárias" : "Everyday Conversations"}</li>
-                                <li>{isPortuguese ? "Compreensão auditiva e de leitura" : "Listening & Reading Comprehension"}</li>
-                                <li>{isPortuguese ? "Prática de conversação" : "Speaking Practice"}</li>
-                                <li>{isPortuguese ? "Competências de escrita" : "Writing Skills"}</li>
-                                <li>{isPortuguese ? "Aspetos culturais e sociais" : "Cultural and Social Aspects"}</li>
-                                <li>{isPortuguese ? "Comunicação digital" : "Digital Communication"}</li>
+                                <li>{isPortuguese ? "Competências funcionais de linguagem" : "Functional language skills"}</li>
+                                <li>{isPortuguese ? "Conversas diárias" : "Everyday conversations"}</li>
+                                <li>{isPortuguese ? "Compreensão auditiva e de leitura" : "Listening & reading comprehension"}</li>
+                                <li>{isPortuguese ? "Prática de conversação" : "Speaking practice"}</li>
+                                <li>{isPortuguese ? "Competências de escrita" : "Writing skills"}</li>
+                                <li>{isPortuguese ? "Aspetos culturais e sociais" : "Cultural and social aspects"}</li>
+                                <li>{isPortuguese ? "Comunicação digital" : "Digital communication"}</li>
                             </ul>
                             <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) e os objetivos do curso. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança em cenários da vida real e a melhorar as suas competências de conversação e comunicação." : "The specific content and structure of the\n" +
                                 "course may vary based on the level\n" +
@@ -165,11 +165,11 @@ function App() {
                        <div className="lf-services__cards-unit">
                             <h2 className="lf-services__cards-unit--title">{isPortuguese ? "Inglês para Comunicação Empresarial" : "English for Business Communication" }</h2>
                            <ul className="lf-services__cards-unit--topics">
-                               <li>{isPortuguese ? "Vocabulário empresarial" : "Business Vocabulary"}</li>
-                               <li>{isPortuguese ? "Competências de comunicação empresarial" : "Business Communication Skills"}</li>
-                               <li>{isPortuguese ? "Comunicação intercultural" : "Cross-Cultural Communication"}</li>
-                               <li><i>Networking</i>{isPortuguese ? " e socialização" : " and Socialising"}</li>
-                               <li>{isPortuguese ? "Comunicação digital" : "Digital Communication"}</li>
+                               <li>{isPortuguese ? "Vocabulário empresarial" : "Business vocabulary"}</li>
+                               <li>{isPortuguese ? "Competências de comunicação empresarial" : "Business communication skills"}</li>
+                               <li>{isPortuguese ? "Comunicação intercultural" : "Cross-cultural communication"}</li>
+                               <li><i>Networking</i>{isPortuguese ? " e socialização" : " and socialising"}</li>
+                               <li>{isPortuguese ? "Comunicação digital" : "Digital communication"}</li>
                            </ul>
 
                            <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "Este curso pode ser personalizado com base nas necessidades específicas dos participantes e dos setores em que trabalham. O objetivo é equipar os participantes com as competências linguísticas e de comunicação necessárias para se destacarem nas suas carreiras profissionais e se envolverem efetivamente na comunidade empresarial global." : "This course may be customised based on\n" +
@@ -196,15 +196,15 @@ function App() {
                     <div className="lf-services__cards">
                        <h1>{isPortuguese ? "Inglês para Fins Académicos" : "English for Academic Purposes"}</h1>
                        <div className="lf-services__cards-unit">
-                            <h2 className="lf-services__cards-unit--title">{isPortuguese ? "Competências académicas para estudantes a iniciar o Ensino Superior" : "Academic skills for Undergraduates"}</h2>
+                            <h2 className="lf-services__cards-unit--title">{isPortuguese ? "Competências académicas para estudantes a iniciar o Ensino Superior" : "Academic skills for undergraduates"}</h2>
                             <ul className="lf-services__cards-unit--topics">
-                                <li>{isPortuguese ? "Vocabulário e Terminologia Académico" : "Academic Vocabulary and Terminology"}</li>
-                                <li>{isPortuguese ? "Leitura e compreensão de textos académicos" : "Reading and Understanding Academic Texts"}</li>
+                                <li>{isPortuguese ? "Vocabulário e Terminologia Académico" : "Academic vocabulary and terminology"}</li>
+                                <li>{isPortuguese ? "Leitura e compreensão de textos académicos" : "Reading and understanding academic texts"}</li>
                                 <li>{isPortuguese ? "Desenvolver competências de pensamento crítico" : "Developing critical thinking skills"}</li>
                                 <li>{isPortuguese ? "Competências de escrita" : "Writing skills"}</li>
                                 <li>{isPortuguese ? "Técnicas de pesquisa" : "Research skills"}</li>
-                                <li>{isPortuguese ? "Técnicas de apresentação oral" : "Oral Presentation Skills"}</li>
-                                <li>{isPortuguese ? "Gestão de tempo e de estudo" : "Time Management & Study skills"}</li>
+                                <li>{isPortuguese ? "Técnicas de apresentação oral" : "Oral presentation skills"}</li>
+                                <li>{isPortuguese ? "Gestão de tempo e de estudo" : "Time management & study skills"}</li>
                             </ul>
                             <span className="lf-services__cards-unit--description lf-italic">{isPortuguese ? "O conteúdo específico e a estrutura do curso podem variar de acordo com o nível (iniciante, intermédio, avançado) dos participantes. Este curso foi desenvolvido para ajudar os alunos a usar o inglês com confiança no âmbito académico. As competências obtidas podem ser transferidas para as técnicas de escrita, leitura e pesquisa noutras línguas." : "This course is designed for\n" +
                                 "undergraduate students who are in\n" +
