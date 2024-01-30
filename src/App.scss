@@ -254,6 +254,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  .lf-homepage__container {
+    margin: 0 50px;
+    margin-top: 150px;
+  }
+}
+
 @media (max-width: 900px) {
   .lf-about {
     &__container {
