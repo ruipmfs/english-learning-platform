@@ -75,7 +75,7 @@ function App() {
             <Header changeLanguage={ updateLang } />
             <div className="lf-homepage__container">
                 <TypeAnimation className="lf-homepage__container__type-animation"
-                    style={{ whiteSpace: 'pre-line', height: '420', display: 'block', fontFamily: "'Oranienbaum', cursive" }}
+                    style={{ whiteSpace: 'pre-line', height: '420', display: 'block', fontFamily: "'Montserrat', cursive" }}
                     sequence={[
                         `Live\nEnglish\nAnd\nFly`,
                         2000,
