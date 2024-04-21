@@ -1,5 +1,5 @@
 import './App.scss';
-import BackgroundVid from './assets/background2.mp4';
+import BackgroundVid from './assets/background.mp4';
 import Portrait from './assets/AboutUs.jpg';
 import Quotes1 from './assets/quotes1.png';
 import Quotes2 from './assets/quotes2.png';
