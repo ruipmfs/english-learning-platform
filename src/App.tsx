@@ -73,7 +73,7 @@ function App() {
             </video>
             {/* @ts-ignore*/}
             <Header changeLanguage={ updateLang } />
-            <div className="lf-homepage__container">
+            <div className="lf-homepage__container" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                 <TypeAnimation className="lf-homepage__container__type-animation"
                     style={{ whiteSpace: 'pre-line', height: '420', display: 'block', fontFamily: "'Montserrat', cursive" }}
                     sequence={[
