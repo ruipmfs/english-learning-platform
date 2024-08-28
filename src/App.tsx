@@ -10,10 +10,13 @@ import Header from "./components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { TypeAnimation } from "react-type-animation";
-import LeafLogo from './assets/leaf_logo_3_negative.png'
+import LeafLogo from './assets/leaf_logo_3_negative.png';
+import SavingFace from './assets/SavingFace.png';
+import SavingFacePdf from './assets/SavingFace.pdf';
 import React, {useState} from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleLanguage } from './store';
+import {Card} from "primereact/card";
 
 function App() {
     // @ts-ignore
@@ -65,6 +68,18 @@ function App() {
     }
 
     window.addEventListener('scroll', checkIsScrolled);
+
+    const cardFooter = (
+        <>
+            <a href={SavingFacePdf} className="p-button p-button-secondary" target="__blank">
+                {isPortuguese ? "Ler mais" : "Read more"}
+            </a>
+        </>
+    );
+
+    const cardHeader = (src: string) => {
+        return <img alt="Card" src={src} className="lf-newsletter__header--img" />;
+    };
 
     return (
         <div className="lf-homepage">
@@ -311,6 +326,12 @@ function App() {
                             </div>
                        </div>
                     </div>
+                </div>
+            </div>
+            <div className="lf-newsletter" id="newsletter">
+                <h1 className="lf-black">Newsletter</h1>
+                <div className="lf-newsletter__cards">
+                    <Card title="Saving Face" subTitle={isPortuguese ? "Maio 2018" : "May 2018"} footer={cardFooter} header={() => cardHeader(SavingFace)} className="md:w-25rem" />
                 </div>
             </div>
             <div className="lf-contact" id="contact">

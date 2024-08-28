@@ -62,6 +62,7 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
                 {isOpen && <nav className="lf-header__nav">
                     <a href="#about" onClick={ () => handleClick(!isOpen) }>{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
                     <a href="#services" onClick={ () => handleClick(!isOpen) }>Serviços</a>
+                    <a href="#newsletter" onClick={ () => handleClick(!isOpen) }>Newsletter</a>
                     <a href="#contact" onClick={ () => handleClick(!isOpen) }>Contacte-nos</a>
                     <div className="lf-header__nav-lang">
                         <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(true); }}>PT</button>
@@ -80,6 +81,7 @@ const Header: React.FC<HeaderProps> = ({ changeLanguage }) => {
                 <nav className="lf-header__nav">
                     <a href="#about">{ isPortuguese ? "O que é a LEAF?" : "What is LEAF?"}</a>
                     <a href="#services">{ isPortuguese ? "Serviços" : "Services"}</a>
+                    <a href="#newsletter">Newsletter</a>
                     <a href="#contact">{ isPortuguese ? "Contacte-nos" : "Contact us"}</a>
                     <div className="lf-header__nav-lang">
                         <button className="lf-bold" onClick={() => { changeLanguage(); setIsPortuguese(true); }}>PT</button>

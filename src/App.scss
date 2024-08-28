@@ -228,6 +228,31 @@
   }
 }
 
+.lf-newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 0 32px;
+  padding-top: 90px;
+
+  > * {
+    color: black;
+  }
+
+  &__cards {
+    display: grid;
+    padding-inline: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  &__header--img {
+    height: 35vh;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
 .lf-italic {
   font-style: italic;
 }
