@@ -110,7 +110,7 @@ function App() {
                             "professionals and academics. My journey began at a language school, Inglês\n" +
                             "Funcional, in Portugal and soon after completing a Master’s degree in\n" +
                             "Education, I ventured into the university context at Coimbra University in Portugal,\n" +
-                            "and Durham University, and Oxford University in the United Kingdom."}</p>
+                            "Durham University, and Oxford University in the United Kingdom."}</p>
                     </div>
                     <img src={ Portrait } alt="Portrait"></img>
                 </div>
