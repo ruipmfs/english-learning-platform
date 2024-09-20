@@ -105,12 +105,12 @@ function App() {
                 <div className="lf-about__container">
                     <div className="lf-about__container--text">
                         <p>{ isPortuguese ? "Sempre tive fascínio por línguas - os seus sons, as suas nuances culturais e o seu uso como instrumento de expressão. A minha educação na rica tapeçaria cultural da África do Sul proporcionou-me um privilégio único - mergulhar no mosaico vibrante da diversidade étnica. Isso não só proporcionou uma experiência enriquecedora, mas também aumentou a consciência dos desafios que enfrentamos ao tentar comunicar numa língua diferente." : "I have always had a fascination for languages – their sounds, their cultural nuances, and their use as an instrument for expression. My upbringing in the culturally rich tapestry of South Africa has afforded me the unique privilege of immersing myself in the vibrant mosaic of ethnic diversity. This not only provided an enriching experience but also heightened awareness of the challenges we encounter when trying to communicate in a different language."}</p>
-                        <p>{ isPortuguese ? "Como professora de inglês, com quase três décadas de experiência, estou sediada em Portugal, onde dediquei a minha carreira a capacitar jovens adultos, profissionais e académicos. A minha jornada começou numa escola de línguas, Inglês Funcional, em Portugal, e pouco depois de concluir um mestrado em Educação, embarquei no contexto universitário na Universidade de Coimbra, em Portugal, e na Universidade de Durham, no Reino Unido." : "As an English teacher boasting nearly three decades of expertise, I am based in\n" +
+                        <p>{ isPortuguese ? "Como professora de inglês, com quase três décadas de experiência, estou sediada em Portugal, onde dediquei a minha carreira a capacitar jovens adultos, profissionais e académicos. A minha jornada começou numa escola de línguas, Inglês Funcional, em Portugal, e pouco depois de concluir um mestrado em Educação, embarquei no contexto universitário na Universidade de Coimbra, em Portugal, na Universidade de Durham, e na Universidade de Oxford no Reino Unido." : "As an English teacher boasting nearly three decades of expertise, I am based in\n" +
                             "Portugal, where I have dedicated my career to empowering young adults,\n" +
                             "professionals and academics. My journey began at a language school, Inglês\n" +
                             "Funcional, in Portugal and soon after completing a Master’s degree in\n" +
-                            "Education, I ventured into the university context at Coimbra University in Portugal\n" +
-                            "and Durham University in the United Kingdom."}</p>
+                            "Education, I ventured into the university context at Coimbra University in Portugal,\n" +
+                            "and Durham University, and Oxford University in the United Kingdom."}</p>
                     </div>
                     <img src={ Portrait } alt="Portrait"></img>
                 </div>
